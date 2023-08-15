@@ -1,0 +1,840 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4464359E2A8AFE4D00CE1BF8 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 4464359D2A8AFE4D00CE1BF8 /* Icon */; };
+		4464359F2A8AFE4D00CE1BF8 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 4464359D2A8AFE4D00CE1BF8 /* Icon */; };
+		446435A02A8AFE4D00CE1BF8 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 4464359D2A8AFE4D00CE1BF8 /* Icon */; };
+		446435BC2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A22A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png */; };
+		446435BD2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A22A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png */; };
+		446435BE2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A22A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png */; };
+		446435BF2A8B006600CE1BF8 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A32A8B005F00CE1BF8 /* LaunchImage.png */; };
+		446435C02A8B006600CE1BF8 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A32A8B005F00CE1BF8 /* LaunchImage.png */; };
+		446435C12A8B006600CE1BF8 /* LaunchImage.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A32A8B005F00CE1BF8 /* LaunchImage.png */; };
+		446435C22A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A42A8B005F00CE1BF8 /* LaunchImage~iphone_640x960.png */; };
+		446435C32A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A42A8B005F00CE1BF8 /* LaunchImage~iphone_640x960.png */; };
+		446435C42A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A42A8B005F00CE1BF8 /* LaunchImage~iphone_640x960.png */; };
+		446435C52A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A52A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png */; };
+		446435C62A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A52A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png */; };
+		446435C72A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A52A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png */; };
+		446435C82A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A62A8B006000CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png */; };
+		446435C92A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A62A8B006000CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png */; };
+		446435CA2A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A62A8B006000CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png */; };
+		446435CB2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A72A8B006000CE1BF8 /* LaunchImage~iphone-320x480.png */; };
+		446435CC2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A72A8B006000CE1BF8 /* LaunchImage~iphone-320x480.png */; };
+		446435CD2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A72A8B006000CE1BF8 /* LaunchImage~iphone-320x480.png */; };
+		446435CE2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A82A8B006000CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png */; };
+		446435CF2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A82A8B006000CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png */; };
+		446435D02A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A82A8B006000CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png */; };
+		446435D12A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A92A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png */; };
+		446435D22A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A92A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png */; };
+		446435D32A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435A92A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png */; };
+		446435D42A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AA2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */; };
+		446435D52A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AA2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */; };
+		446435D62A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AA2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */; };
+		446435D72A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AB2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png */; };
+		446435D82A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AB2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png */; };
+		446435D92A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AB2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png */; };
+		446435DA2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AC2A8B006100CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png */; };
+		446435DB2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AC2A8B006100CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png */; };
+		446435DC2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AC2A8B006100CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png */; };
+		446435DD2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AD2A8B006200CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png */; };
+		446435DE2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AD2A8B006200CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png */; };
+		446435DF2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AD2A8B006200CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png */; };
+		446435E02A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AE2A8B006200CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png */; };
+		446435E12A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AE2A8B006200CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png */; };
+		446435E22A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AE2A8B006200CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png */; };
+		446435E32A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AF2A8B006200CE1BF8 /* LaunchImage~ipad.png */; };
+		446435E42A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AF2A8B006200CE1BF8 /* LaunchImage~ipad.png */; };
+		446435E52A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435AF2A8B006200CE1BF8 /* LaunchImage~ipad.png */; };
+		446435E62A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B02A8B006200CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png */; };
+		446435E72A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B02A8B006200CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png */; };
+		446435E82A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B02A8B006200CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png */; };
+		446435E92A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B12A8B006300CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png */; };
+		446435EA2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B12A8B006300CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png */; };
+		446435EB2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B12A8B006300CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png */; };
+		446435EC2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B22A8B006300CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png */; };
+		446435ED2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B22A8B006300CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png */; };
+		446435EE2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B22A8B006300CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png */; };
+		446435EF2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B32A8B006400CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png */; };
+		446435F02A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B32A8B006400CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png */; };
+		446435F12A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B32A8B006400CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png */; };
+		446435F22A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B42A8B006400CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */; };
+		446435F32A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B42A8B006400CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */; };
+		446435F42A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B42A8B006400CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */; };
+		446435F52A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B52A8B006400CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png */; };
+		446435F62A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B52A8B006400CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png */; };
+		446435F72A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B52A8B006400CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png */; };
+		446435F82A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B62A8B006400CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png */; };
+		446435F92A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B62A8B006400CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png */; };
+		446435FA2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B62A8B006400CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png */; };
+		446435FB2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B72A8B006500CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png */; };
+		446435FC2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B72A8B006500CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png */; };
+		446435FD2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B72A8B006500CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png */; };
+		446435FE2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B82A8B006500CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png */; };
+		446435FF2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B82A8B006500CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png */; };
+		446436002A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B82A8B006500CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png */; };
+		446436012A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B92A8B006500CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png */; };
+		446436022A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B92A8B006500CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png */; };
+		446436032A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435B92A8B006500CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png */; };
+		446436042A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BA2A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png */; };
+		446436052A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BA2A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png */; };
+		446436062A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BA2A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png */; };
+		446436072A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BB2A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png */; };
+		446436082A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BB2A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png */; };
+		446436092A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */ = {isa = PBXBuildFile; fileRef = 446435BB2A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png */; };
+		4464360F2A8B0AD800CE1BF8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4464360E2A8B0AD800CE1BF8 /* LaunchScreen.storyboard */; };
+		44F0C9202A85ED71005BB477 /* Apple_Certified_Support_Professional_Practice_ExamApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C91F2A85ED71005BB477 /* Apple_Certified_Support_Professional_Practice_ExamApp.swift */; };
+		44F0C9222A85ED71005BB477 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C9212A85ED71005BB477 /* ContentView.swift */; };
+		44F0C9242A85ED72005BB477 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F0C9232A85ED72005BB477 /* Assets.xcassets */; };
+		44F0C9272A85ED72005BB477 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 44F0C9262A85ED72005BB477 /* Preview Assets.xcassets */; };
+		44F0C9312A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C9302A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamTests.swift */; };
+		44F0C93B2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C93A2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITests.swift */; };
+		44F0C93D2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C93C2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift */; };
+		44F0C94A2A85EE2F005BB477 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C9492A85EE2F005BB477 /* Question.swift */; };
+		44F0C94C2A85EEBB005BB477 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F0C94B2A85EEBB005BB477 /* questions.json */; };
+		44F0C94D2A85F689005BB477 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F0C94B2A85EEBB005BB477 /* questions.json */; };
+		44F0C94E2A85F68A005BB477 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 44F0C94B2A85EEBB005BB477 /* questions.json */; };
+		44F0C94F2A85F698005BB477 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C9492A85EE2F005BB477 /* Question.swift */; };
+		44F0C9502A85F699005BB477 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 44F0C9492A85EE2F005BB477 /* Question.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		44F0C92D2A85ED72005BB477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F0C9142A85ED71005BB477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F0C91B2A85ED71005BB477;
+			remoteInfo = "Apple Certified Support Professional Practice Exam";
+		};
+		44F0C9372A85ED72005BB477 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 44F0C9142A85ED71005BB477 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 44F0C91B2A85ED71005BB477;
+			remoteInfo = "Apple Certified Support Professional Practice Exam";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4464359D2A8AFE4D00CE1BF8 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon; sourceTree = "<group>"; };
+		446435A22A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Portrait@2x~ipad_1668x2224.png"; sourceTree = "<group>"; };
+		446435A32A8B005F00CE1BF8 /* LaunchImage.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LaunchImage.png; sourceTree = "<group>"; };
+		446435A42A8B005F00CE1BF8 /* LaunchImage~iphone_640x960.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage~iphone_640x960.png"; sourceTree = "<group>"; };
+		446435A52A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Portrait@2x~ipad_1536x2008.png"; sourceTree = "<group>"; };
+		446435A62A8B006000CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png"; sourceTree = "<group>"; };
+		446435A72A8B006000CE1BF8 /* LaunchImage~iphone-320x480.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage~iphone-320x480.png"; sourceTree = "<group>"; };
+		446435A82A8B006000CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png"; sourceTree = "<group>"; };
+		446435A92A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape@2x~ipad_2224x1668.png"; sourceTree = "<group>"; };
+		446435AA2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape@2x~ipad_2048x1536.png"; sourceTree = "<group>"; };
+		446435AB2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape@2x~ipad_2048x1496.png"; sourceTree = "<group>"; };
+		446435AC2A8B006100CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-750@2x~iphone6-landscape_1334x750.png"; sourceTree = "<group>"; };
+		446435AD2A8B006200CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape~ipad_1024x748.png"; sourceTree = "<group>"; };
+		446435AE2A8B006200CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png"; sourceTree = "<group>"; };
+		446435AF2A8B006200CE1BF8 /* LaunchImage~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage~ipad.png"; sourceTree = "<group>"; };
+		446435B02A8B006200CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png"; sourceTree = "<group>"; };
+		446435B12A8B006300CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png"; sourceTree = "<group>"; };
+		446435B22A8B006300CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Portrait@2x~ipad_1536x2048.png"; sourceTree = "<group>"; };
+		446435B32A8B006400CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape~ipad_1024x768.png"; sourceTree = "<group>"; };
+		446435B42A8B006400CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape@2x~ipad_2732x2048.png"; sourceTree = "<group>"; };
+		446435B52A8B006400CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-568h@2x~iphone_640x1136.png"; sourceTree = "<group>"; };
+		446435B62A8B006400CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-750@2x~iphone6-portrait_750x1334.png"; sourceTree = "<group>"; };
+		446435B72A8B006500CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Portrait~ipad_768x1024.png"; sourceTree = "<group>"; };
+		446435B82A8B006500CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png"; sourceTree = "<group>"; };
+		446435B92A8B006500CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Portrait@2x~ipad_2048x2732.png"; sourceTree = "<group>"; };
+		446435BA2A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png"; sourceTree = "<group>"; };
+		446435BB2A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-828@2x~iphoneXr-portrait_828x1792.png"; sourceTree = "<group>"; };
+		4464360E2A8B0AD800CE1BF8 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		446436102A8B0E3700CE1BF8 /* Apple-Certified-Support-Professional-Practice-Exam-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "Apple-Certified-Support-Professional-Practice-Exam-Info.plist"; sourceTree = SOURCE_ROOT; };
+		44F0C91C2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Apple Certified Support Professional Practice Exam.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F0C91F2A85ED71005BB477 /* Apple_Certified_Support_Professional_Practice_ExamApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Certified_Support_Professional_Practice_ExamApp.swift; sourceTree = "<group>"; };
+		44F0C9212A85ED71005BB477 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		44F0C9232A85ED72005BB477 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		44F0C9262A85ED72005BB477 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		44F0C92C2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Certified Support Professional Practice ExamTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F0C9302A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Certified_Support_Professional_Practice_ExamTests.swift; sourceTree = "<group>"; };
+		44F0C9362A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Apple Certified Support Professional Practice ExamUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		44F0C93A2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Certified_Support_Professional_Practice_ExamUITests.swift; sourceTree = "<group>"; };
+		44F0C93C2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		44F0C9492A85EE2F005BB477 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		44F0C94B2A85EEBB005BB477 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		44F0C9192A85ED71005BB477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C9292A85ED72005BB477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C9332A85ED72005BB477 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		446435A12A8B000000CE1BF8 /* LaunchImages */ = {
+			isa = PBXGroup;
+			children = (
+				446435B52A8B006400CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png */,
+				446435AC2A8B006100CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png */,
+				446435B62A8B006400CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png */,
+				446435BB2A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png */,
+				446435BA2A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png */,
+				446435B12A8B006300CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png */,
+				446435B82A8B006500CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png */,
+				446435A82A8B006000CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png */,
+				446435AE2A8B006200CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png */,
+				446435B02A8B006200CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png */,
+				446435A62A8B006000CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png */,
+				446435AB2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png */,
+				446435AA2A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */,
+				446435A92A8B006100CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png */,
+				446435B42A8B006400CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */,
+				446435AD2A8B006200CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png */,
+				446435B32A8B006400CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png */,
+				446435A52A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png */,
+				446435B22A8B006300CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png */,
+				446435A22A8B005F00CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png */,
+				446435B92A8B006500CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png */,
+				446435B72A8B006500CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png */,
+				446435A32A8B005F00CE1BF8 /* LaunchImage.png */,
+				446435AF2A8B006200CE1BF8 /* LaunchImage~ipad.png */,
+				446435A42A8B005F00CE1BF8 /* LaunchImage~iphone_640x960.png */,
+				446435A72A8B006000CE1BF8 /* LaunchImage~iphone-320x480.png */,
+			);
+			path = LaunchImages;
+			sourceTree = "<group>";
+		};
+		44F0C9132A85ED71005BB477 = {
+			isa = PBXGroup;
+			children = (
+				4464360E2A8B0AD800CE1BF8 /* LaunchScreen.storyboard */,
+				446435A12A8B000000CE1BF8 /* LaunchImages */,
+				44F0C91E2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */,
+				44F0C92F2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests */,
+				44F0C9392A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests */,
+				44F0C91D2A85ED71005BB477 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		44F0C91D2A85ED71005BB477 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				44F0C91C2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam.app */,
+				44F0C92C2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests.xctest */,
+				44F0C9362A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		44F0C91E2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */ = {
+			isa = PBXGroup;
+			children = (
+				446436102A8B0E3700CE1BF8 /* Apple-Certified-Support-Professional-Practice-Exam-Info.plist */,
+				44F0C91F2A85ED71005BB477 /* Apple_Certified_Support_Professional_Practice_ExamApp.swift */,
+				44F0C9212A85ED71005BB477 /* ContentView.swift */,
+				44F0C9232A85ED72005BB477 /* Assets.xcassets */,
+				4464359D2A8AFE4D00CE1BF8 /* Icon */,
+				44F0C9252A85ED72005BB477 /* Preview Content */,
+				44F0C9492A85EE2F005BB477 /* Question.swift */,
+				44F0C94B2A85EEBB005BB477 /* questions.json */,
+			);
+			path = "Apple Certified Support Professional Practice Exam";
+			sourceTree = "<group>";
+		};
+		44F0C9252A85ED72005BB477 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				44F0C9262A85ED72005BB477 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		44F0C92F2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests */ = {
+			isa = PBXGroup;
+			children = (
+				44F0C9302A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamTests.swift */,
+			);
+			path = "Apple Certified Support Professional Practice ExamTests";
+			sourceTree = "<group>";
+		};
+		44F0C9392A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests */ = {
+			isa = PBXGroup;
+			children = (
+				44F0C93A2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITests.swift */,
+				44F0C93C2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift */,
+			);
+			path = "Apple Certified Support Professional Practice ExamUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		44F0C91B2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F0C9402A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice Exam" */;
+			buildPhases = (
+				44F0C9182A85ED71005BB477 /* Sources */,
+				44F0C9192A85ED71005BB477 /* Frameworks */,
+				44F0C91A2A85ED71005BB477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Apple Certified Support Professional Practice Exam";
+			productName = "Apple Certified Support Professional Practice Exam";
+			productReference = 44F0C91C2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam.app */;
+			productType = "com.apple.product-type.application";
+		};
+		44F0C92B2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F0C9432A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice ExamTests" */;
+			buildPhases = (
+				44F0C9282A85ED72005BB477 /* Sources */,
+				44F0C9292A85ED72005BB477 /* Frameworks */,
+				44F0C92A2A85ED72005BB477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F0C92E2A85ED72005BB477 /* PBXTargetDependency */,
+			);
+			name = "Apple Certified Support Professional Practice ExamTests";
+			productName = "Apple Certified Support Professional Practice ExamTests";
+			productReference = 44F0C92C2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		44F0C9352A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 44F0C9462A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice ExamUITests" */;
+			buildPhases = (
+				44F0C9322A85ED72005BB477 /* Sources */,
+				44F0C9332A85ED72005BB477 /* Frameworks */,
+				44F0C9342A85ED72005BB477 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				44F0C9382A85ED72005BB477 /* PBXTargetDependency */,
+			);
+			name = "Apple Certified Support Professional Practice ExamUITests";
+			productName = "Apple Certified Support Professional Practice ExamUITests";
+			productReference = 44F0C9362A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		44F0C9142A85ED71005BB477 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					44F0C91B2A85ED71005BB477 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					44F0C92B2A85ED72005BB477 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 44F0C91B2A85ED71005BB477;
+					};
+					44F0C9352A85ED72005BB477 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 44F0C91B2A85ED71005BB477;
+					};
+				};
+			};
+			buildConfigurationList = 44F0C9172A85ED71005BB477 /* Build configuration list for PBXProject "Apple Certified Support Professional Practice Exam" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 44F0C9132A85ED71005BB477;
+			productRefGroup = 44F0C91D2A85ED71005BB477 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				44F0C91B2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */,
+				44F0C92B2A85ED72005BB477 /* Apple Certified Support Professional Practice ExamTests */,
+				44F0C9352A85ED72005BB477 /* Apple Certified Support Professional Practice ExamUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		44F0C91A2A85ED71005BB477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F0C94C2A85EEBB005BB477 /* questions.json in Resources */,
+				446435EF2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */,
+				4464359E2A8AFE4D00CE1BF8 /* Icon in Resources */,
+				446435CB2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */,
+				446435F82A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */,
+				446435CE2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */,
+				446435E92A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */,
+				446436042A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */,
+				446435F22A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */,
+				446435F52A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */,
+				446435C22A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */,
+				446435C52A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */,
+				446435D42A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */,
+				446435C82A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */,
+				446435BF2A8B006600CE1BF8 /* LaunchImage.png in Resources */,
+				446435D72A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */,
+				446435D12A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */,
+				4464360F2A8B0AD800CE1BF8 /* LaunchScreen.storyboard in Resources */,
+				446435FE2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */,
+				44F0C9272A85ED72005BB477 /* Preview Assets.xcassets in Resources */,
+				44F0C9242A85ED72005BB477 /* Assets.xcassets in Resources */,
+				446435E32A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */,
+				446435E02A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */,
+				446435DD2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */,
+				446435E62A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */,
+				446435FB2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */,
+				446435EC2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */,
+				446436072A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */,
+				446435DA2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */,
+				446436012A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */,
+				446435BC2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C92A2A85ED72005BB477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446435F32A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */,
+				446435D22A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */,
+				446435ED2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */,
+				446435FF2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */,
+				446435E42A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */,
+				446435C92A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */,
+				446436022A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */,
+				446435C02A8B006600CE1BF8 /* LaunchImage.png in Resources */,
+				446435BD2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */,
+				446435F92A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */,
+				446435FC2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */,
+				446435E72A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */,
+				446436082A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */,
+				446435EA2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */,
+				446435DB2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */,
+				446435C32A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */,
+				446435F62A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */,
+				44F0C94D2A85F689005BB477 /* questions.json in Resources */,
+				4464359F2A8AFE4D00CE1BF8 /* Icon in Resources */,
+				446435CC2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */,
+				446435CF2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */,
+				446436052A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */,
+				446435E12A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */,
+				446435D52A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */,
+				446435C62A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */,
+				446435D82A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */,
+				446435DE2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */,
+				446435F02A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C9342A85ED72005BB477 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				446435F42A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */,
+				446435D32A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2224x1668.png in Resources */,
+				446435EE2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2048.png in Resources */,
+				446436002A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-portrait_1242x2208.png in Resources */,
+				446435E52A8B006600CE1BF8 /* LaunchImage~ipad.png in Resources */,
+				446435CA2A8B006600CE1BF8 /* LaunchImage-2688@3x~iphoneXsMax-landscape_2688x1242.png in Resources */,
+				446436032A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_2048x2732.png in Resources */,
+				446435C12A8B006600CE1BF8 /* LaunchImage.png in Resources */,
+				446435BE2A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1668x2224.png in Resources */,
+				446435FA2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-portrait_750x1334.png in Resources */,
+				446435FD2A8B006600CE1BF8 /* LaunchImage-Portrait~ipad_768x1024.png in Resources */,
+				446435E82A8B006600CE1BF8 /* LaunchImage-2436@3x~iphoneX-landscape_2436x1125.png in Resources */,
+				446436092A8B006600CE1BF8 /* LaunchImage-828@2x~iphoneXr-portrait_828x1792.png in Resources */,
+				446435EB2A8B006600CE1BF8 /* LaunchImage-1242@3x~iphone6s-landscape_2208x1242.png in Resources */,
+				446435DC2A8B006600CE1BF8 /* LaunchImage-750@2x~iphone6-landscape_1334x750.png in Resources */,
+				446435C42A8B006600CE1BF8 /* LaunchImage~iphone_640x960.png in Resources */,
+				446435F72A8B006600CE1BF8 /* LaunchImage-568h@2x~iphone_640x1136.png in Resources */,
+				44F0C94E2A85F68A005BB477 /* questions.json in Resources */,
+				446435A02A8AFE4D00CE1BF8 /* Icon in Resources */,
+				446435CD2A8B006600CE1BF8 /* LaunchImage~iphone-320x480.png in Resources */,
+				446435D02A8B006600CE1BF8 /* LaunchImage-1242@3x~iphoneXsMax-portrait_1242x2688.png in Resources */,
+				446436062A8B006600CE1BF8 /* LaunchImage-1125@3x~iphoneX-portrait_1125x2436.png in Resources */,
+				446435E22A8B006600CE1BF8 /* LaunchImage-1792@2x~iphoneXr-landscape_1792x828.png in Resources */,
+				446435D62A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */,
+				446435C72A8B006600CE1BF8 /* LaunchImage-Portrait@2x~ipad_1536x2008.png in Resources */,
+				446435D92A8B006600CE1BF8 /* LaunchImage-Landscape@2x~ipad_2048x1496.png in Resources */,
+				446435DF2A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x748.png in Resources */,
+				446435F12A8B006600CE1BF8 /* LaunchImage-Landscape~ipad_1024x768.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		44F0C9182A85ED71005BB477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F0C94A2A85EE2F005BB477 /* Question.swift in Sources */,
+				44F0C9222A85ED71005BB477 /* ContentView.swift in Sources */,
+				44F0C9202A85ED71005BB477 /* Apple_Certified_Support_Professional_Practice_ExamApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C9282A85ED72005BB477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F0C9312A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamTests.swift in Sources */,
+				44F0C94F2A85F698005BB477 /* Question.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		44F0C9322A85ED72005BB477 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				44F0C9502A85F699005BB477 /* Question.swift in Sources */,
+				44F0C93D2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITestsLaunchTests.swift in Sources */,
+				44F0C93B2A85ED72005BB477 /* Apple_Certified_Support_Professional_Practice_ExamUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		44F0C92E2A85ED72005BB477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F0C91B2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */;
+			targetProxy = 44F0C92D2A85ED72005BB477 /* PBXContainerItemProxy */;
+		};
+		44F0C9382A85ED72005BB477 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 44F0C91B2A85ED71005BB477 /* Apple Certified Support Professional Practice Exam */;
+			targetProxy = 44F0C9372A85ED72005BB477 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		44F0C93E2A85ED72005BB477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		44F0C93F2A85ED72005BB477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		44F0C9412A85ED72005BB477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Apple Certified Support Professional Practice Exam/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Apple-Certified-Support-Professional-Practice-Exam-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ACSP Training";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-Exam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		44F0C9422A85ED72005BB477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"Apple Certified Support Professional Practice Exam/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Apple-Certified-Support-Professional-Practice-Exam-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ACSP Training";
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen.storyboard;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-Exam";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		44F0C9442A85ED72005BB477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-ExamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apple Certified Support Professional Practice Exam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Apple Certified Support Professional Practice Exam";
+			};
+			name = Debug;
+		};
+		44F0C9452A85ED72005BB477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-ExamTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Apple Certified Support Professional Practice Exam.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Apple Certified Support Professional Practice Exam";
+			};
+			name = Release;
+		};
+		44F0C9472A85ED72005BB477 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-ExamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Apple Certified Support Professional Practice Exam";
+			};
+			name = Debug;
+		};
+		44F0C9482A85ED72005BB477 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.Apple-Certified-Support-Professional-Practice-ExamUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "Apple Certified Support Professional Practice Exam";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		44F0C9172A85ED71005BB477 /* Build configuration list for PBXProject "Apple Certified Support Professional Practice Exam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F0C93E2A85ED72005BB477 /* Debug */,
+				44F0C93F2A85ED72005BB477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F0C9402A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice Exam" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F0C9412A85ED72005BB477 /* Debug */,
+				44F0C9422A85ED72005BB477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F0C9432A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice ExamTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F0C9442A85ED72005BB477 /* Debug */,
+				44F0C9452A85ED72005BB477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		44F0C9462A85ED72005BB477 /* Build configuration list for PBXNativeTarget "Apple Certified Support Professional Practice ExamUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				44F0C9472A85ED72005BB477 /* Debug */,
+				44F0C9482A85ED72005BB477 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 44F0C9142A85ED71005BB477 /* Project object */;
+}
