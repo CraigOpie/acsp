@@ -1,0 +1,612 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4459D24A2A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D2492A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift */; };
+		4459D24C2A8B1FC9000C9B90 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D24B2A8B1FC9000C9B90 /* ContentView.swift */; };
+		4459D24E2A8B1FCA000C9B90 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4459D24D2A8B1FCA000C9B90 /* Assets.xcassets */; };
+		4459D2512A8B1FCA000C9B90 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4459D2502A8B1FCA000C9B90 /* Preview Assets.xcassets */; };
+		4459D25B2A8B1FCA000C9B90 /* ACSP_Exam_PrepTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D25A2A8B1FCA000C9B90 /* ACSP_Exam_PrepTests.swift */; };
+		4459D2652A8B1FCA000C9B90 /* ACSP_Exam_PrepUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D2642A8B1FCA000C9B90 /* ACSP_Exam_PrepUITests.swift */; };
+		4459D2672A8B1FCA000C9B90 /* ACSP_Exam_PrepUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D2662A8B1FCA000C9B90 /* ACSP_Exam_PrepUITestsLaunchTests.swift */; };
+		4459D2742A8B205D000C9B90 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 4459D2732A8B205D000C9B90 /* questions.json */; };
+		4459D2762A8B20BA000C9B90 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4459D2752A8B20BA000C9B90 /* Question.swift */; };
+		4459D2782A8B2124000C9B90 /* Icon in Resources */ = {isa = PBXBuildFile; fileRef = 4459D2772A8B2124000C9B90 /* Icon */; };
+		4459D27A2A8B21ED000C9B90 /* Splashscreen in Resources */ = {isa = PBXBuildFile; fileRef = 4459D2792A8B21ED000C9B90 /* Splashscreen */; };
+		4459D27C2A8B21FE000C9B90 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4459D27B2A8B21FE000C9B90 /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4459D2572A8B1FCA000C9B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4459D23E2A8B1FC9000C9B90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4459D2452A8B1FC9000C9B90;
+			remoteInfo = "ACSP Exam Prep";
+		};
+		4459D2612A8B1FCA000C9B90 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4459D23E2A8B1FC9000C9B90 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4459D2452A8B1FC9000C9B90;
+			remoteInfo = "ACSP Exam Prep";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4459D2462A8B1FC9000C9B90 /* ACSP Exam Prep.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "ACSP Exam Prep.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4459D2492A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSP_Exam_PrepApp.swift; sourceTree = "<group>"; };
+		4459D24B2A8B1FC9000C9B90 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4459D24D2A8B1FCA000C9B90 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4459D2502A8B1FCA000C9B90 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4459D2562A8B1FCA000C9B90 /* ACSP Exam PrepTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACSP Exam PrepTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4459D25A2A8B1FCA000C9B90 /* ACSP_Exam_PrepTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSP_Exam_PrepTests.swift; sourceTree = "<group>"; };
+		4459D2602A8B1FCA000C9B90 /* ACSP Exam PrepUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "ACSP Exam PrepUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4459D2642A8B1FCA000C9B90 /* ACSP_Exam_PrepUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSP_Exam_PrepUITests.swift; sourceTree = "<group>"; };
+		4459D2662A8B1FCA000C9B90 /* ACSP_Exam_PrepUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ACSP_Exam_PrepUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4459D2732A8B205D000C9B90 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		4459D2752A8B20BA000C9B90 /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		4459D2772A8B2124000C9B90 /* Icon */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Icon; sourceTree = "<group>"; };
+		4459D2792A8B21ED000C9B90 /* Splashscreen */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Splashscreen; sourceTree = "<group>"; };
+		4459D27B2A8B21FE000C9B90 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		44FAFCEE2A8B22FA00DD90E2 /* ACSP-Exam-Prep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ACSP-Exam-Prep-Info.plist"; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4459D2432A8B1FC9000C9B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D2532A8B1FCA000C9B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D25D2A8B1FCA000C9B90 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4459D23D2A8B1FC9000C9B90 = {
+			isa = PBXGroup;
+			children = (
+				4459D27B2A8B21FE000C9B90 /* LaunchScreen.storyboard */,
+				4459D2792A8B21ED000C9B90 /* Splashscreen */,
+				4459D2482A8B1FC9000C9B90 /* ACSP Exam Prep */,
+				4459D2592A8B1FCA000C9B90 /* ACSP Exam PrepTests */,
+				4459D2632A8B1FCA000C9B90 /* ACSP Exam PrepUITests */,
+				4459D2472A8B1FC9000C9B90 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4459D2472A8B1FC9000C9B90 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4459D2462A8B1FC9000C9B90 /* ACSP Exam Prep.app */,
+				4459D2562A8B1FCA000C9B90 /* ACSP Exam PrepTests.xctest */,
+				4459D2602A8B1FCA000C9B90 /* ACSP Exam PrepUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4459D2482A8B1FC9000C9B90 /* ACSP Exam Prep */ = {
+			isa = PBXGroup;
+			children = (
+				44FAFCEE2A8B22FA00DD90E2 /* ACSP-Exam-Prep-Info.plist */,
+				4459D2492A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift */,
+				4459D24B2A8B1FC9000C9B90 /* ContentView.swift */,
+				4459D24D2A8B1FCA000C9B90 /* Assets.xcassets */,
+				4459D2772A8B2124000C9B90 /* Icon */,
+				4459D24F2A8B1FCA000C9B90 /* Preview Content */,
+				4459D2732A8B205D000C9B90 /* questions.json */,
+				4459D2752A8B20BA000C9B90 /* Question.swift */,
+			);
+			path = "ACSP Exam Prep";
+			sourceTree = "<group>";
+		};
+		4459D24F2A8B1FCA000C9B90 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4459D2502A8B1FCA000C9B90 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4459D2592A8B1FCA000C9B90 /* ACSP Exam PrepTests */ = {
+			isa = PBXGroup;
+			children = (
+				4459D25A2A8B1FCA000C9B90 /* ACSP_Exam_PrepTests.swift */,
+			);
+			path = "ACSP Exam PrepTests";
+			sourceTree = "<group>";
+		};
+		4459D2632A8B1FCA000C9B90 /* ACSP Exam PrepUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4459D2642A8B1FCA000C9B90 /* ACSP_Exam_PrepUITests.swift */,
+				4459D2662A8B1FCA000C9B90 /* ACSP_Exam_PrepUITestsLaunchTests.swift */,
+			);
+			path = "ACSP Exam PrepUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4459D2452A8B1FC9000C9B90 /* ACSP Exam Prep */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4459D26A2A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam Prep" */;
+			buildPhases = (
+				4459D2422A8B1FC9000C9B90 /* Sources */,
+				4459D2432A8B1FC9000C9B90 /* Frameworks */,
+				4459D2442A8B1FC9000C9B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "ACSP Exam Prep";
+			productName = "ACSP Exam Prep";
+			productReference = 4459D2462A8B1FC9000C9B90 /* ACSP Exam Prep.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4459D2552A8B1FCA000C9B90 /* ACSP Exam PrepTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4459D26D2A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam PrepTests" */;
+			buildPhases = (
+				4459D2522A8B1FCA000C9B90 /* Sources */,
+				4459D2532A8B1FCA000C9B90 /* Frameworks */,
+				4459D2542A8B1FCA000C9B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4459D2582A8B1FCA000C9B90 /* PBXTargetDependency */,
+			);
+			name = "ACSP Exam PrepTests";
+			productName = "ACSP Exam PrepTests";
+			productReference = 4459D2562A8B1FCA000C9B90 /* ACSP Exam PrepTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4459D25F2A8B1FCA000C9B90 /* ACSP Exam PrepUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4459D2702A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam PrepUITests" */;
+			buildPhases = (
+				4459D25C2A8B1FCA000C9B90 /* Sources */,
+				4459D25D2A8B1FCA000C9B90 /* Frameworks */,
+				4459D25E2A8B1FCA000C9B90 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4459D2622A8B1FCA000C9B90 /* PBXTargetDependency */,
+			);
+			name = "ACSP Exam PrepUITests";
+			productName = "ACSP Exam PrepUITests";
+			productReference = 4459D2602A8B1FCA000C9B90 /* ACSP Exam PrepUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4459D23E2A8B1FC9000C9B90 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1430;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					4459D2452A8B1FC9000C9B90 = {
+						CreatedOnToolsVersion = 14.3.1;
+					};
+					4459D2552A8B1FCA000C9B90 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4459D2452A8B1FC9000C9B90;
+					};
+					4459D25F2A8B1FCA000C9B90 = {
+						CreatedOnToolsVersion = 14.3.1;
+						TestTargetID = 4459D2452A8B1FC9000C9B90;
+					};
+				};
+			};
+			buildConfigurationList = 4459D2412A8B1FC9000C9B90 /* Build configuration list for PBXProject "ACSP Exam Prep" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4459D23D2A8B1FC9000C9B90;
+			productRefGroup = 4459D2472A8B1FC9000C9B90 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4459D2452A8B1FC9000C9B90 /* ACSP Exam Prep */,
+				4459D2552A8B1FCA000C9B90 /* ACSP Exam PrepTests */,
+				4459D25F2A8B1FCA000C9B90 /* ACSP Exam PrepUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4459D2442A8B1FC9000C9B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4459D2742A8B205D000C9B90 /* questions.json in Resources */,
+				4459D27A2A8B21ED000C9B90 /* Splashscreen in Resources */,
+				4459D2782A8B2124000C9B90 /* Icon in Resources */,
+				4459D27C2A8B21FE000C9B90 /* LaunchScreen.storyboard in Resources */,
+				4459D2512A8B1FCA000C9B90 /* Preview Assets.xcassets in Resources */,
+				4459D24E2A8B1FCA000C9B90 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D2542A8B1FCA000C9B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D25E2A8B1FCA000C9B90 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4459D2422A8B1FC9000C9B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4459D2762A8B20BA000C9B90 /* Question.swift in Sources */,
+				4459D24C2A8B1FC9000C9B90 /* ContentView.swift in Sources */,
+				4459D24A2A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D2522A8B1FCA000C9B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4459D25B2A8B1FCA000C9B90 /* ACSP_Exam_PrepTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4459D25C2A8B1FCA000C9B90 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4459D2652A8B1FCA000C9B90 /* ACSP_Exam_PrepUITests.swift in Sources */,
+				4459D2672A8B1FCA000C9B90 /* ACSP_Exam_PrepUITestsLaunchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4459D2582A8B1FCA000C9B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4459D2452A8B1FC9000C9B90 /* ACSP Exam Prep */;
+			targetProxy = 4459D2572A8B1FCA000C9B90 /* PBXContainerItemProxy */;
+		};
+		4459D2622A8B1FCA000C9B90 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4459D2452A8B1FC9000C9B90 /* ACSP Exam Prep */;
+			targetProxy = 4459D2612A8B1FCA000C9B90 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		4459D2682A8B1FCA000C9B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4459D2692A8B1FCA000C9B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4459D26B2A8B1FCA000C9B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ACSP Exam Prep/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ACSP-Exam-Prep-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ACSP Exam Prep";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-Prep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4459D26C2A8B1FCA000C9B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"ACSP Exam Prep/Preview Content\"";
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "ACSP-Exam-Prep-Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "ACSP Exam Prep";
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-Prep";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		4459D26E2A8B1FCA000C9B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-PrepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACSP Exam Prep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ACSP Exam Prep";
+			};
+			name = Debug;
+		};
+		4459D26F2A8B1FCA000C9B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.4;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-PrepTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ACSP Exam Prep.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/ACSP Exam Prep";
+			};
+			name = Release;
+		};
+		4459D2712A8B1FCA000C9B90 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-PrepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ACSP Exam Prep";
+			};
+			name = Debug;
+		};
+		4459D2722A8B1FCA000C9B90 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 5DP9AS8UQK;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.DeathStarDevelopments.ACSP-Exam-PrepUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "ACSP Exam Prep";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4459D2412A8B1FC9000C9B90 /* Build configuration list for PBXProject "ACSP Exam Prep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4459D2682A8B1FCA000C9B90 /* Debug */,
+				4459D2692A8B1FCA000C9B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4459D26A2A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam Prep" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4459D26B2A8B1FCA000C9B90 /* Debug */,
+				4459D26C2A8B1FCA000C9B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4459D26D2A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam PrepTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4459D26E2A8B1FCA000C9B90 /* Debug */,
+				4459D26F2A8B1FCA000C9B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4459D2702A8B1FCA000C9B90 /* Build configuration list for PBXNativeTarget "ACSP Exam PrepUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4459D2712A8B1FCA000C9B90 /* Debug */,
+				4459D2722A8B1FCA000C9B90 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4459D23E2A8B1FC9000C9B90 /* Project object */;
+}
