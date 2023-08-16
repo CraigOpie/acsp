@@ -1,8 +1,8 @@
+![ACSP Exam Prep Logo](https://github.com/CraigOpie/acsp/blob/main/ACSP%20Exam%20Prep/ACSP%20Exam%20Prep/Icon/iPhone/AppIcon.appiconset/180.png?raw=true)
+
 # ACSP Exam Prep
 
 **ACSP Exam Prep** is a Swift-based application aimed to assist users in preparing for the Apple Certified Support Professional examination. The app presents questions and answers in both a study mode and an exam mode, allowing users to gauge their knowledge and readiness for the examination.
-
-![ACSP Exam Prep Logo](https://github.com/CraigOpie/acsp/blob/main/ACSP%20Exam%20Prep/ACSP%20Exam%20Prep/Icon/iPhone/AppIcon.appiconset/180.png?raw=true)
 
 ## Table of Contents
 
