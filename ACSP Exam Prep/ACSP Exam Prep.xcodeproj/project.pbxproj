@@ -44,6 +44,7 @@
 		4485047E2A8B350E009DA329 /* LaunchImage-Landscape@2x~ipad_2048x1536.png in Resources */ = {isa = PBXBuildFile; fileRef = 448504642A8B350A009DA329 /* LaunchImage-Landscape@2x~ipad_2048x1536.png */; };
 		4485047F2A8B350E009DA329 /* LaunchImage-Landscape@2x~ipad_2732x2048.png in Resources */ = {isa = PBXBuildFile; fileRef = 448504652A8B350D009DA329 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */; };
 		448504812A8B3517009DA329 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 448504802A8B3517009DA329 /* LaunchScreen.storyboard */; };
+		BB5E36142C34C37B00AA5E9F /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = BB5E36132C34C37B00AA5E9F /* Item.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +106,7 @@
 		448504652A8B350D009DA329 /* LaunchImage-Landscape@2x~ipad_2732x2048.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "LaunchImage-Landscape@2x~ipad_2732x2048.png"; sourceTree = "<group>"; };
 		448504802A8B3517009DA329 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		44FAFCEE2A8B22FA00DD90E2 /* ACSP-Exam-Prep-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = "ACSP-Exam-Prep-Info.plist"; sourceTree = SOURCE_ROOT; };
+		BB5E36132C34C37B00AA5E9F /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -159,6 +161,7 @@
 				44FAFCEE2A8B22FA00DD90E2 /* ACSP-Exam-Prep-Info.plist */,
 				4459D2492A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift */,
 				4459D24B2A8B1FC9000C9B90 /* ContentView.swift */,
+				BB5E36132C34C37B00AA5E9F /* Item.swift */,
 				4459D24D2A8B1FCA000C9B90 /* Assets.xcassets */,
 				4459D2772A8B2124000C9B90 /* Icon */,
 				4459D24F2A8B1FCA000C9B90 /* Preview Content */,
@@ -386,6 +389,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BB5E36142C34C37B00AA5E9F /* Item.swift in Sources */,
 				4459D2762A8B20BA000C9B90 /* Question.swift in Sources */,
 				4459D24C2A8B1FC9000C9B90 /* ContentView.swift in Sources */,
 				4459D24A2A8B1FC9000C9B90 /* ACSP_Exam_PrepApp.swift in Sources */,
@@ -561,6 +565,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -596,6 +601,7 @@
 				INFOPLIST_KEY_UIStatusBarStyle = "";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

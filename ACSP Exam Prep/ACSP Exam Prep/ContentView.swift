@@ -6,12 +6,16 @@
 //
 
 import SwiftUI
+import SwiftData
 
 enum QuizMode {
     case study, exam
 }
 
 struct ContentView: View {
+    @Environment(\.modelContext) private var modelContext
+    @Query private var items: [Item]
+    
     @State private var questions: [Question] = []
     @State private var currentQuestionIndex = 0
     @State private var selectedAnswers: Set<String> = []
@@ -21,55 +25,59 @@ struct ContentView: View {
     @State private var showMenu = true
     @State private var hasCheckedAnswer = false
     @Environment(\.colorScheme) var colorScheme
-
+    
     var body: some View {
         if showMenu {
-            VStack(spacing: 30) {
-                Text("Apple Certified Support Professional Practice Exam")
-                    .multilineTextAlignment(.center)
-                    .font(.title)
-                    .padding(.top, 50)
-
-                Spacer()
-
-                Button(action: {
-                    self.mode = .study
-                    self.showMenu = false
-                    self.loadQuestions()
-                }) {
-                    Text("Study Mode")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.primary)
-                        .cornerRadius(10)
-                }
-                .buttonStyle(MagicButtonEffect())
-
-                Button(action: {
-                    self.mode = .exam
-                    self.showMenu = false
-                    self.loadQuestions()
-                }) {
-                    Text("Exam Mode")
-                        .padding()
-                        .frame(maxWidth: .infinity)
-                        .background(Color.blue)
-                        .foregroundColor(.primary)
-                        .cornerRadius(10)
-                }
-                .buttonStyle(MagicButtonEffect())
-
-                Spacer()
-            }
-            .padding()
+            menuView
         } else if showResult {
             resultView
         } else {
             quizView
         }
     }
-
+    
+    var menuView: some View {
+        VStack(spacing: 30) {
+            Text("Apple Certified Support Professional Practice Exam")
+                .multilineTextAlignment(.center)
+                .font(.title)
+                .padding(.top, 50)
+            
+            Spacer()
+            
+            Button(action: {
+                self.mode = .study
+                self.showMenu = false
+                self.loadQuestions()
+            }) {
+                Text("Study Mode")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .foregroundColor(.primary)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(MagicButtonEffect())
+            
+            Button(action: {
+                self.mode = .exam
+                self.showMenu = false
+                self.loadQuestions()
+            }) {
+                Text("Exam Mode")
+                    .padding()
+                    .frame(maxWidth: .infinity)
+                    .background(Color.blue)
+                    .foregroundColor(.primary)
+                    .cornerRadius(10)
+            }
+            .buttonStyle(MagicButtonEffect())
+            
+            Spacer()
+        }
+        .padding()
+    }
+    
     var resultView: some View {
         VStack(spacing: 30) {
             Text(correctAnswers >= (questions.count / 10 * 8) ? "Pass" : "Fail")
@@ -99,12 +107,12 @@ struct ContentView: View {
         }
         .padding()
     }
-
+    
     var quizView: some View {
         VStack(spacing: 20) {
             HStack {
                 ProgressBar(progress: Double(currentQuestionIndex) / Double(questions.count))
-                    .frame(maxWidth: UIScreen.main.bounds.width * 0.85)
+                    .frame(maxWidth: maxWidth())
 
                 Spacer(minLength: 10)
 
@@ -122,34 +130,50 @@ struct ContentView: View {
             }
 
             if !questions.isEmpty {
-                Text(questions[currentQuestionIndex].question)
-                    .padding()
-                    .background(Color.gray.opacity(0.1))
-                    .cornerRadius(10)
-                    .frame(maxWidth: .infinity)
-                    .foregroundColor(.primary)
-
-                ForEach(questions[currentQuestionIndex].allOptions, id: \.self) { option in
-                    Button(action: {
-                        if !hasCheckedAnswer {
-                            if selectedAnswers.contains(option) {
-                                selectedAnswers.remove(option)
-                            } else {
-                                selectedAnswers.insert(option)
-                            }
-                        }
-                    }) {
-                        Text(option)
-                            .frame(maxWidth: .infinity)
+                GeometryReader { geometry in
+                    ScrollView {
+                        Text(questions[currentQuestionIndex].question)
+                            .font(.system(size: min(geometry.size.width * 0.05, 20)))
                             .padding()
-                            .background(buttonColor(for: option))
-                            .foregroundColor(.primary)
-                            .overlay(correctBorder(for: option))
+                            .background(Color.gray.opacity(0.1))
                             .cornerRadius(10)
-                            .blur(radius: shouldBlur(option: option) ? 5 : 0)
+                            .frame(maxWidth: .infinity)
+                            .foregroundColor(.primary)
+                            .minimumScaleFactor(0.5)
+                            .lineLimit(nil)
                     }
-                    .buttonStyle(MagicButtonEffect())
+                    .frame(height: geometry.size.height * 0.95)
                 }
+
+                ScrollView {
+                    VStack(spacing: 10) {
+                        ForEach(questions[currentQuestionIndex].allOptions, id: \.self) { option in
+                            Button(action: {
+                                if !hasCheckedAnswer {
+                                    if selectedAnswers.contains(option) {
+                                        selectedAnswers.remove(option)
+                                    } else {
+                                        selectedAnswers.insert(option)
+                                    }
+                                }
+                            }) {
+                                Text(option)
+                                    .frame(maxWidth: .infinity)
+                                    .padding()
+                                    .background(buttonColor(for: option))
+                                    .foregroundColor(.primary)
+                                    .overlay(correctBorder(for: option))
+                                    .cornerRadius(10)
+                                    .blur(radius: shouldBlur(option: option) ? 5 : 0)
+                                    .minimumScaleFactor(0.5)
+                                    .lineLimit(nil)
+                            }
+                            .buttonStyle(MagicButtonEffect())
+                        }
+                    }
+                }
+                .scrollIndicators(.visible)
+
 
                 Spacer()
 
@@ -166,6 +190,8 @@ struct ContentView: View {
                         .background(!selectedAnswers.isEmpty ? Color.green : Color.gray)
                         .foregroundColor(.primary)
                         .cornerRadius(10)
+                        .minimumScaleFactor(0.5)
+                        .lineLimit(nil)
                 }
                 .buttonStyle(MagicButtonEffect())
                 .disabled(selectedAnswers.isEmpty)
@@ -175,7 +201,19 @@ struct ContentView: View {
         .padding()
         .onAppear(perform: loadQuestions)
     }
-
+    
+    func maxWidth() -> CGFloat {
+        #if os(iOS)
+        return UIScreen.main.bounds.width * 0.85
+        #else
+        if let screen = NSScreen.main {
+            return screen.visibleFrame.width * 0.85
+        } else {
+            return 1080
+        }
+        #endif
+    }
+    
     func loadQuestions() {
         if let url = Bundle.main.url(forResource: "questions", withExtension: "json"),
            let data = try? Data(contentsOf: url) {
@@ -267,8 +305,7 @@ struct MagicButtonEffect: ButtonStyle {
     }
 }
 
-struct ContentView_Previews: PreviewProvider {
-    static var previews: some View {
-        ContentView()
-    }
+#Preview {
+    ContentView()
+        .modelContainer(for: Item.self, inMemory: true)
 }
