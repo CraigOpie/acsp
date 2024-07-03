@@ -22,21 +22,25 @@ class QuizViewModel: ObservableObject {
     @Published var showAlert = false
     @Published var showConfetti = false
     @Published var timer: DispatchSourceTimer?
+    private var uniqueQuestionsAsked: Set<UUID> = []
 
     var passed: Bool {
         correctAnswers >= (questions.count / 10 * 8)
     }
 
     var percentageCorrect: Int {
-        Int(Double(correctAnswers) / Double(questions.count) * 100)
+        guard !questions.isEmpty else { return 0 }
+        return Int(Double(correctAnswers) / Double(questions.count) * 100)
     }
 
     var incorrectAnswers: Int {
-        questions.count - correctAnswers
+        guard !questions.isEmpty else { return 0 }
+        return questions.count - correctAnswers
     }
 
     var progress: Double {
-        Double(currentQuestionIndex) / Double(questions.count)
+        guard !questions.isEmpty else { return 0 }
+        return Double(uniqueQuestionsAsked.count) / Double(questions.count)
     }
 
     var maxWidth: CGFloat {
@@ -81,6 +85,7 @@ class QuizViewModel: ObservableObject {
     func initializeQuiz() {
         hasCheckedAnswer = false
         selectedAnswers = []
+        uniqueQuestionsAsked.removeAll()
         loadQuestions()
         if mode == .exam {
             startTimer()
@@ -214,15 +219,25 @@ class QuizViewModel: ObservableObject {
     func checkAnswer() {
         if mode == .study {
             hasCheckedAnswer = true
+            if currentQuestion.isCorrectAnswer(Array(selectedAnswers)) {
+                questions[currentQuestionIndex].consecutiveCorrectAnswers += 1
+                if questions[currentQuestionIndex].consecutiveCorrectAnswers >= 3 {
+                    questions.remove(at: currentQuestionIndex)
+                }
+            } else {
+                questions[currentQuestionIndex].consecutiveCorrectAnswers = 0
+            }
         } else {
-            moveToNextQuestion()
+            if currentQuestion.isCorrectAnswer(Array(selectedAnswers)) {
+                correctAnswers += 1
+            }
         }
     }
 
     func moveToNextQuestion() {
         withAnimation {
-            if currentQuestion.isCorrectAnswer(Array(selectedAnswers)) {
-                correctAnswers += 1
+            if !uniqueQuestionsAsked.contains(currentQuestion.id) {
+                uniqueQuestionsAsked.insert(currentQuestion.id)
             }
             if currentQuestionIndex < questions.count - 1 {
                 currentQuestionIndex += 1
@@ -238,11 +253,33 @@ class QuizViewModel: ObservableObject {
         }
     }
 
+    func moveToNextStudyQuestion() {
+        withAnimation {
+            if !uniqueQuestionsAsked.contains(currentQuestion.id) {
+                uniqueQuestionsAsked.insert(currentQuestion.id)
+            }
+            if questions.isEmpty {
+                showMenu = true
+            } else {
+                currentQuestionIndex = Int.random(in: 0..<questions.count)
+                selectedAnswers.removeAll()
+                hasCheckedAnswer = false
+            }
+        }
+    }
+
     func submitAnswer() {
         if hasCheckedAnswer {
-            moveToNextQuestion()
+            if mode == .study {
+                moveToNextStudyQuestion()
+            } else {
+                moveToNextQuestion()
+            }
         } else {
             checkAnswer()
+            if mode == .exam {
+                moveToNextQuestion()
+            }
         }
     }
 }

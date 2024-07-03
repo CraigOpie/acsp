@@ -12,39 +12,53 @@ struct Question: Identifiable, Decodable {
     let question: String
     let answers: Answer
     var allOptions: [String]
+    var consecutiveCorrectAnswers: Int = 0
 
     struct Answer: Decodable {
         let correct: [String]
         let incorrect: [String]
+
+        init(correct: [String], incorrect: [String]) {
+            self.correct = correct
+            self.incorrect = incorrect
+        }
+
+        init(from decoder: Decoder) throws {
+            let container = try decoder.container(keyedBy: CodingKeys.self)
+            
+            if let correctArray = try? container.decode([String].self, forKey: .correct) {
+                self.correct = correctArray
+            } else if let correctString = try? container.decode(String.self, forKey: .correct) {
+                self.correct = [correctString]
+            } else {
+                self.correct = []
+            }
+            
+            self.incorrect = try container.decode([String].self, forKey: .incorrect)
+        }
+
+        private enum CodingKeys: String, CodingKey {
+            case correct, incorrect
+        }
     }
 
     init(question: String, answers: Answer, allOptions: [String]) {
         self.question = question
         self.answers = answers
         self.allOptions = allOptions
+        self.consecutiveCorrectAnswers = 0
     }
 
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-
         self.question = try container.decode(String.self, forKey: .question)
-
-        let answersContainer = try container.nestedContainer(keyedBy: AnswerKeys.self, forKey: .answers)
-
-        let correctAnswers: [String]
-        if let singleCorrect = try? answersContainer.decode(String.self, forKey: .correct) {
-            correctAnswers = [singleCorrect]
-        } else {
-            correctAnswers = try answersContainer.decode([String].self, forKey: .correct)
-        }
-
-        let incorrectAnswers = try answersContainer.decode([String].self, forKey: .incorrect)
-        self.answers = Answer(correct: correctAnswers, incorrect: incorrectAnswers)
+        self.answers = try container.decode(Answer.self, forKey: .answers)
 
         var options = answers.incorrect
         let correctIndex = Int.random(in: 0...answers.incorrect.count)
         options.insert(contentsOf: answers.correct, at: correctIndex)
         self.allOptions = options
+        self.consecutiveCorrectAnswers = 0
     }
 
     func isCorrectAnswer(_ answer: [String]) -> Bool {
@@ -53,9 +67,5 @@ struct Question: Identifiable, Decodable {
 
     private enum CodingKeys: String, CodingKey {
         case question, answers
-    }
-
-    private enum AnswerKeys: String, CodingKey {
-        case correct, incorrect
     }
 }
