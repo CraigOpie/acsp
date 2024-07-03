@@ -26,15 +26,38 @@ struct ContentView: View {
     @State private var hasCheckedAnswer = false
     @State private var timeRemaining = 7200 // 120 minutes in seconds
     @State private var timerActive = false
+    @State private var showAlert = false
+    @State private var showConfetti = false
     @Environment(\.colorScheme) var colorScheme
-    
+    @State private var timer: DispatchSourceTimer?
+
     var body: some View {
         if showMenu {
             menuView
-        } else if showResult {
+        } else if showResult && mode == .exam {
             resultView
         } else {
             quizView
+                .alert(isPresented: $showAlert) {
+                    if mode == .exam {
+                        return Alert(
+                            title: Text("End Exam"),
+                            message: Text("Are you sure you want to end your exam?"),
+                            primaryButton: .destructive(Text("End Exam")) {
+                                markRemainingQuestionsIncorrect()
+                                showResult = true
+                            },
+                            secondaryButton: .cancel()
+                        )
+                    } else {
+                        return Alert(title: Text("Error"), message: Text("Unexpected mode"), dismissButton: .default(Text("OK")))
+                    }
+                }
+                .onAppear {
+                    if correctAnswers >= (questions.count / 10 * 8) {
+                        showConfetti = true
+                    }
+                }
         }
     }
     
@@ -99,16 +122,39 @@ struct ContentView: View {
             .background(Color.gray.opacity(0.1))
             .cornerRadius(10)
 
-            Button(action: retryQuiz) {
-                Text("Retry")
-                    .padding()
-                    .background(Color.blue)
-                    .foregroundColor(.primary)
-                    .cornerRadius(10)
+            HStack(spacing: 20) {
+                Button(action: retryQuiz) {
+                    Text("Retry")
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .buttonStyle(MagicButtonEffect())
+
+                Button(action: {
+                    retryQuiz()
+                    showMenu = true
+                    showResult = false
+                }) {
+                    Text("Main Menu")
+                        .padding()
+                        .background(Color.gray)
+                        .foregroundColor(.white)
+                        .cornerRadius(10)
+                }
+                .buttonStyle(MagicButtonEffect())
             }
-            .buttonStyle(MagicButtonEffect())
         }
         .padding()
+        .background(
+            ZStack {
+                if showConfetti {
+                    ConfettiView()
+                        .edgesIgnoringSafeArea(.all)
+                }
+            }
+        )
     }
     
     var quizView: some View {
@@ -116,8 +162,11 @@ struct ContentView: View {
             HStack {
                 Spacer()
                 Button(action: {
-                    self.showMenu = true
-                    self.retryQuiz()
+                    if mode == .exam {
+                        showAlert = true
+                    } else {
+                        showMenu = true
+                    }
                 }) {
                     Image(systemName: "xmark")
                         .padding(10)
@@ -128,10 +177,12 @@ struct ContentView: View {
                 .buttonStyle(MagicButtonEffect())
             }
             .overlay(
-                Text(timeString(time: timeRemaining))
-                    .font(.headline)
-                    .padding(.top, 10)
-                    .foregroundColor(timerColor()),
+                mode == .exam ? AnyView(
+                    Text(timeString(time: timeRemaining))
+                        .font(.headline)
+                        .padding(.top, 10)
+                        .foregroundColor(timerColor())
+                ) : AnyView(EmptyView()),
                 alignment: .center
             )
             
@@ -210,7 +261,14 @@ struct ContentView: View {
             }
         }
         .padding()
-        .onAppear(perform: loadQuestions)
+        .onAppear {
+            hasCheckedAnswer = false
+            selectedAnswers = []
+            loadQuestions()
+            if mode == .exam {
+                startTimer()
+            }
+        }
     }
     
     func maxWidth() -> CGFloat {
@@ -278,7 +336,11 @@ struct ContentView: View {
                 selectedAnswers.removeAll()
                 hasCheckedAnswer = false
             } else {
-                showResult = true
+                if mode == .exam {
+                    showResult = true
+                } else {
+                    showMenu = true
+                }
             }
         }
     }
@@ -289,6 +351,8 @@ struct ContentView: View {
         selectedAnswers = []
         hasCheckedAnswer = false
         showResult = false
+        showConfetti = false
+        stopTimer()
         loadQuestions()
         if mode == .exam {
             timeRemaining = 7200
@@ -298,19 +362,27 @@ struct ContentView: View {
 
     func startTimer() {
         timerActive = true
-        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
-            guard timerActive else {
-                timer.invalidate()
-                return
-            }
-            if timeRemaining > 0 {
-                timeRemaining -= 1
+
+        timer?.cancel()
+        timer = DispatchSource.makeTimerSource(queue: DispatchQueue.main)
+        timer?.schedule(deadline: .now(), repeating: 1.0)
+        timer?.setEventHandler {
+            if self.timeRemaining > 0 {
+                self.timeRemaining -= 1
             } else {
-                timer.invalidate()
-                markRemainingQuestionsIncorrect()
-                showResult = true
+                self.timer?.cancel()
+                self.markRemainingQuestionsIncorrect()
+                self.showResult = true
             }
         }
+        timer?.resume()
+    }
+    
+    func stopTimer() {
+        timerActive = false
+        timer?.cancel()
+        timer = nil
+        timeRemaining = 7200
     }
 
     func markRemainingQuestionsIncorrect() {
