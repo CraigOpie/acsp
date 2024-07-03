@@ -8,7 +8,7 @@
 import Foundation
 
 struct Question: Identifiable, Decodable {
-    private(set) var id: UUID = UUID()
+    var id: UUID = UUID()
     let question: String
     let answers: Answer
     var allOptions: [String]
@@ -16,6 +16,12 @@ struct Question: Identifiable, Decodable {
     struct Answer: Decodable {
         let correct: [String]
         let incorrect: [String]
+    }
+
+    init(question: String, answers: Answer, allOptions: [String]) {
+        self.question = question
+        self.answers = answers
+        self.allOptions = allOptions
     }
 
     init(from decoder: Decoder) throws {
