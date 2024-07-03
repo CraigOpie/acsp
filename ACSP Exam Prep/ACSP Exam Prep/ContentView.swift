@@ -24,6 +24,8 @@ struct ContentView: View {
     @State private var mode: QuizMode?
     @State private var showMenu = true
     @State private var hasCheckedAnswer = false
+    @State private var timeRemaining = 7200 // 120 minutes in seconds
+    @State private var timerActive = false
     @Environment(\.colorScheme) var colorScheme
     
     var body: some View {
@@ -63,6 +65,7 @@ struct ContentView: View {
                 self.mode = .exam
                 self.showMenu = false
                 self.loadQuestions()
+                self.startTimer()
             }) {
                 Text("Exam Mode")
                     .padding()
@@ -111,11 +114,7 @@ struct ContentView: View {
     var quizView: some View {
         VStack(spacing: 20) {
             HStack {
-                ProgressBar(progress: Double(currentQuestionIndex) / Double(questions.count))
-                    .frame(maxWidth: maxWidth())
-
-                Spacer(minLength: 10)
-
+                Spacer()
                 Button(action: {
                     self.showMenu = true
                     self.retryQuiz()
@@ -127,6 +126,18 @@ struct ContentView: View {
                         .clipShape(Circle())
                 }
                 .buttonStyle(MagicButtonEffect())
+            }
+            .overlay(
+                Text(timeString(time: timeRemaining))
+                    .font(.headline)
+                    .padding(.top, 10)
+                    .foregroundColor(timerColor()),
+                alignment: .center
+            )
+            
+            HStack {
+                ProgressBar(progress: Double(currentQuestionIndex) / Double(questions.count))
+                    .frame(maxWidth: maxWidth())
             }
 
             if !questions.isEmpty {
@@ -279,6 +290,49 @@ struct ContentView: View {
         hasCheckedAnswer = false
         showResult = false
         loadQuestions()
+        if mode == .exam {
+            timeRemaining = 7200
+            startTimer()
+        }
+    }
+
+    func startTimer() {
+        timerActive = true
+        Timer.scheduledTimer(withTimeInterval: 1, repeats: true) { timer in
+            guard timerActive else {
+                timer.invalidate()
+                return
+            }
+            if timeRemaining > 0 {
+                timeRemaining -= 1
+            } else {
+                timer.invalidate()
+                markRemainingQuestionsIncorrect()
+                showResult = true
+            }
+        }
+    }
+
+    func markRemainingQuestionsIncorrect() {
+        for _ in currentQuestionIndex..<questions.count {
+            currentQuestionIndex += 1
+        }
+    }
+
+    func timeString(time: Int) -> String {
+        let minutes = time / 60
+        let seconds = time % 60
+        return String(format: "%02d:%02d", minutes, seconds)
+    }
+
+    func timerColor() -> Color {
+        if timeRemaining < 120 {
+            return Color.red
+        } else if timeRemaining < 600 {
+            return Color.yellow
+        } else {
+            return Color.primary
+        }
     }
 }
 
